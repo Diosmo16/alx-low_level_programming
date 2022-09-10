@@ -1,15 +1,32 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-/* more headers goes there */
-/* betty style doc for function main goes there */
-
+/**
+* main - print if thr number is positive, zero or negative
+* Description: using main function
+* this program prints "Programming is positive, zero or negative
+* Return: 0
+*/
 int main(void)
 {
-		int n;
-		srand(time(0));
-		n = rand() - RAND_MAX / 2;
+int n;
+int l;
 
-		/* your code goes there */
-		return (0);
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+l = n % 10;
+
+if (1 > 5)
+{
+	printf("Last digit of %d is %d and is greater then 5\n", n, l);
+}
+else if (l == 0)
+{
+	printf("Last digit of %d is %d and is 0\n", n, l);
+}
+else
+{
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
+}
+return (0);
 }
