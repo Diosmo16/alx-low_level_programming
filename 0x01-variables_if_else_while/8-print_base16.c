@@ -3,20 +3,22 @@
 /**
  * main - loops a certain variable
  *
- * Description: this program print all the 
+ * Description: this program print all the
  * values of base16 to standard output
  * Return: base
  */
-int main() 
+int main(void)
 {
-	char base;
+	int base;
+	char sexteen;
 
-	for (base = '0'; base <= 'f'; base++)
-	putchar("%x");
+	for (base = '0'; base <= '9'; base++)
+		putchar(base);
 
-	putchar(base);
+	for (sexteen = 'a'; sexteen <= 'f'; sexteen++)
+		putchar(sexteen);
 
 	putchar('\n');
 
-	return (base);
+	return (0);
 }
